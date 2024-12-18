@@ -1,0 +1,227 @@
+
+
+.baner {
+    width: 100%;
+    height: 100px;
+}
+
+.baner .container {
+    width: 100%;
+    height: 100px;
+    background-image: url(./img/Bujagali17-min-930x620.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form .container {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 56px;
+    padding-top: 56px;
+    
+}
+
+.price,
+.name,
+.number,
+.email {
+    display: flex;
+}
+
+.radio-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+}
+
+label {
+    margin-top: 40px;
+    display: inline-block;
+    padding: 20px 40px;
+    border: 2px solid #C5C5C5;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    background-color: #ffffff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+input[type="radio"] {
+    display: none;
+    /* 라디오 버튼 숨기기 */
+}
+
+input[type="radio"]:checked+label {
+    background-color: #409167;
+    color: white;
+}
+
+#submitButton {
+    margin-top: 40px;
+    padding: 10px;
+    width: 350px;
+    cursor: pointer;
+    background-color: #409167;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+
+#submitButton:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.price {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+
+.price p {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.form h1 {
+    font-size: 40px;
+}
+
+.form h2 {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.name,
+.number,
+.email {
+    width: 600px;
+    margin-top: 30px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    width: 470px;
+}
+
+.bot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+input{ vertical-align:middle; }
+
+/* 공통 input 스타일 */
+input {
+    width: 100%;
+    max-width: 400px; /* 최대 너비 */
+    padding: 12px 15px;
+    margin-top: 8px; /* 텍스트와 간격 */
+    border: 1px solid #ccc; /* 테두리 */
+    border-radius: 8px; /* 둥근 모서리 */
+    font-size: 16px;
+    font-family: 'Pretendard', sans-serif; /* 적절한 폰트 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* input 포커스 상태 */
+input:focus {
+    border-color: #449771; /* 초록우산 컬러 */
+    box-shadow: 0 4px 8px rgba(68, 151, 113, 0.3); /* 포커스 그림자 */
+    outline: none;
+}
+
+/* 각 레이블 및 텍스트 정렬 */
+.price, .name, .number, .email {
+    margin-bottom: 20px; /* 입력 필드 간의 간격 */
+    display: flex;
+    flex-direction: column; /* 텍스트와 입력 필드를 세로로 정렬 */
+    align-items: flex-start;
+    font-family: 'Pretendard', sans-serif; /* 동일한 폰트 */
+}
+
+/* 레이블 텍스트 스타일 */
+.price p, .name p, .number p, .email p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333; /* 텍스트 컬러 */
+    margin-bottom: 5px;
+}
+
+
+/* 전체 섹션 정렬 */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#moneymessage {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #449771; /* 초록우산 테마 컬러 */
+    
+}
+
+
+.message {
+    margin-top: 5px;
+    font-size: 14px;
+    color: red;
+    display: none; /* 기본적으로 메시지를 숨김 */
+}
+
+.message.valid {
+    color: green;
+    display: block; /* 유효한 입력일 때 메시지 표시 */
+}
+
+input::placeholder {
+    color: rgb(166, 166, 166);
+    font-size: 14px;
+  }
+
+  #submitButton {
+    background-color: #cfcfcf; /* 초록우산 테마 색상 */
+    color: white; /* 텍스트 색상 */
+    font-size: 18px; /* 폰트 크기 */
+    font-weight: bold; /* 텍스트 굵기 */
+    padding: 15px 40px; /* 패딩 추가 */
+    border: none; /* 테두리 제거 */
+    border-radius: 16px; /* 둥근 모서리 */
+    cursor: not-allowed; /* 기본 비활성화 상태일 때 커서 */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+    transition: background-color 0.3s, transform 0.2s; /* 호버 애니메이션 */
+}
+
+/* 활성화 상태 */
+#submitButton:enabled {
+    background-color: #66BB86; /* 활성화 시 더 밝은 색상 */
+    cursor: pointer; /* 활성화 시 포인터 커서 */
+}
+
+/* 호버 효과 */
+#submitButton:enabled:hover {
+    background-color: #3E8E5B; /* 호버 시 더 진한 색상 */
+    transform: translateY(-2px); /* 호버 시 약간 올라가는 효과 */
+}
+
+/* 활성화된 상태에서 누를 때 */
+#submitButton:enabled:active {
+    transform: translateY(0); /* 클릭 시 원래 위치로 복귀 */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* 클릭 시 그림자 줄어듦 */
+}

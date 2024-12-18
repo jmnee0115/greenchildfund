@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./serve1.css">
+    <title>Document</title>
+    <style>
+       
+
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo logohover"><a href="./index.html">초록우산</a></div>
+            <div class="nav">
+                <a href="#">후원</a>
+                <a href="#">캠페인</a>
+                <a href="#">소식</a>
+                <a href="#">참여</a>
+                <a href="#">사업</a>
+                <a href="#">소개</a>
+            </div>
+            <div class="donate-button"><a href="./serve1.html">후원하기</a></div>
+        </div>
+
+    </div>
+
+    <div class="baner">
+        <div class="container">
+        </div>
+    </div>
+
+    <div class="form">
+        <div class="container">
+            <h1>후원 신청하기</h1>
+
+            <div class="price">
+                <p>후원 금액</p>
+                <input class="input_num" id="input_text" type="text" placeholder="10000" />
+                <div id="moneymessage"></div>
+            </div>
+
+            <h2>가입 정보</h2>
+
+            <div class="name">
+                <p>이름</p><input id="nameInput" type="text" placeholder="초록이" />
+            </div>
+            <div class="number">
+                <p>전화번호</p><input input type="text" oninput="autoHyphen(this)" maxlength="13" placeholder="010-0000-0000" autofocus/>
+            </div>
+            <div class="email">
+                <p>이메일</p><input id="emailInput" type="email" placeholder="childfund@gmail.com" />
+                <div id="emailMessage" class="message"></div>
+            </div>
+            
+            <div class="radio-container">
+                <h2>결제수단</h2>
+                <!-- 라디오 버튼과 라벨 -->
+                <input type="radio" id="accountTransfer" name="paymentMethod" value="accountTransfer">
+                <label for="accountTransfer">계좌이체</label>
+
+                <input type="radio" id="offlineDeposit" name="paymentMethod" value="offlineDeposit">
+                <label for="offlineDeposit">무통장입금</label>
+            </div>
+            <div class="bot">
+                <button type="button" id="submitButton" disabled onclick="submitForm()">후원하기</button>
+            </div>
+           
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="upper">
+                <div class="upper-container">
+                    <p class="first">후원문의 및 상담</p>
+                    <p class="number">1588-1940</p>
+                    <p class="date">(평일 09:00 ~ 18:00 / 주말 및 공휴일 휴무)</p>
+                </div>
+            </div>
+            <div class="down">
+                <div class="down-container">
+                    <div class="notify">
+                        <a href="#">개인정보처리방침</a>
+                        <a href="#">이용약관</a>
+                        <a href="#">인재채용</a>
+                        <a href="#">이메일무단수집거부</a>
+                    </div>
+                    <div class="delegate">
+                        <div class="logo-img">
+                            <img src="./img/logo_g.png" alt="">
+                        </div>
+                        <div class="logo-ment">
+                            사회복지법인 어린이재단 | 사업자등록번호 202-82-55238 | 회장 황영기 | 대표이사 손병덕 <br> (04522) 서울시 중구 무교로 20 어린이재단빌딩 |
+                            대표전화 1588-1940 | 팩스 02-756-4256 <br>
+                            Copyright © ChildFund Korea. All Rights Reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./serve.js">
+    </script>
+</body>
+
+</html>
